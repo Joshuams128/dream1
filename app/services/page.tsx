@@ -8,7 +8,7 @@ export default function ServicesPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/servicesbanner.jpg" // put a bathroom header img here
+          src="/servicesbannerr.jpg" // put a bathroom header img here
           alt="Bathroom sinks"
           fill
           className="object-cover"
