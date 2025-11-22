@@ -6,32 +6,37 @@ export default function Home() {
     <main className="bg-white flex flex-col">
 
       {/* HERO SECTION */}
-      <section className="relative h-[600px] w-full">
+      <section className="relative min-h-[420px] w-full md:min-h-[560px] lg:min-h-[640px]">
         <Image
           src="/hero.jpg" // <-- Replace with your real hero image
           alt="Construction Hero"
           fill
+          priority
           className="object-cover"
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/45" />
 
-        <div className="absolute left-0 top-0 flex h-full w-full items-center">
-          <div className="ml-12 bg-black/60 p-10 max-w-lg text-white">
-            <h1 className="text-4xl font-bold">Dream Contractors Services</h1>
-            <p className="mt-4 text-lg">
-              Our mission is to create the dream home for our
-               client’s vision and make it a reality.
-            </p>
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto max-w-6xl px-4 py-10 text-white">
+            <div className="max-w-xl bg-black/55 p-6 backdrop-blur md:p-10">
+              <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+                Dream Contractors Services
+              </h1>
+              <p className="mt-4 text-base leading-relaxed md:text-lg">
+                Our mission is to create the dream home for our client’s vision and make it a reality.
+              </p>
 
-            <button className="mt-6 bg-emerald-500 px-6 py-3 font-medium hover:bg-emerald-400">
-              Contact Us Today
-            </button>
+              <button className="mt-6 bg-[#0574C9] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0462A6] md:text-base">
+                Contact Us Today
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 20 YEARS SECTION */}
-<section className="max-w-6xl mx-auto py-20 px-4">
+<section className="max-w-6xl mx-auto py-16 px-4 md:py-20">
   <div className="flex flex-col md:flex-row items-start gap-10">
     
     {/* LEFT SIDE — TEXT */}
@@ -40,7 +45,7 @@ export default function Home() {
         Durham Home Improvements, Repairs & Renovations
       </h2>
 
-      <p className="mt-2 text-emerald-600 font-semibold">
+      <p className="mt-2 font-semibold text-[#0574C9]">
         Industry Leaders for the Past 15 Years
       </p>
 
@@ -57,18 +62,22 @@ export default function Home() {
         <li>• Water Leak Repairs</li>
       </ul>
 
-      <button className="mt-6 bg-emerald-500 px-6 py-3 text-white hover:bg-emerald-400">
+      <button className="mt-6 bg-[#0574C9] px-6 py-3 text-white hover:bg-[#0462A6]">
         Get a Quote
       </button>
     </div>
 
     {/* RIGHT SIDE — IMAGE */}
-    <div className="md:w-1/2 relative">
-      <img
-        src="/house1.jpg"  
-        alt="Renovation example"
-        className="w-full rounded-lg shadow-lg object-cover"
-      />
+    <div className="md:w-1/2 relative h-full">
+      <div className="relative h-full min-h-[300px] w-full">
+        <Image
+          src="/house1.jpg"
+          alt="Renovation example"
+          fill
+          className="rounded-lg object-cover shadow-lg"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+        />
+      </div>
     </div>
 
   </div>
@@ -91,6 +100,7 @@ export default function Home() {
                   alt="Bathroom Renovations"
                   fill
                   className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold">Bathroom Renovations</h3>
@@ -106,6 +116,7 @@ export default function Home() {
                   alt="Stone Veneers"
                   fill
                   className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold">Stone Veneers & Masonry</h3>
@@ -121,11 +132,69 @@ export default function Home() {
                   alt="Outdoor Improvements"
                   fill
                   className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold">Outdoor Improvements</h3>
               <p className="mt-2 text-gray-700">
                 Create stunning outdoor spaces for summer entertaining.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DREAM HOME CALLOUT */}
+      <section className="relative isolate overflow-hidden bg-[#0f172a] py-16">
+        <Image
+          src="/bathroom-main.jpg"
+          alt="Luxury bathroom with soaking tub"
+          fill
+          className="object-cover opacity-50"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent" />
+
+        <div className="relative mx-auto flex max-w-5xl flex-col gap-8 px-6 md:flex-row md:items-center md:px-10">
+          <div className="md:w-2/3 text-white space-y-4">
+            <p className="text-sm uppercase tracking-wide text-blue-200">Bathroom &amp; Home Renovations</p>
+            <h3 className="text-4xl font-bold leading-tight">Create Your Dream Home</h3>
+            <p className="text-lg leading-relaxed text-blue-100">
+              Whether you&apos;re planning a complete renovation or a focused upgrade, we guide you from
+              design through installation. Our team specializes in updates that elevate comfort,
+              function, and style throughout your home.
+            </p>
+
+            <ul className="space-y-2 text-blue-100">
+              <li className="flex items-center gap-2">
+                <span className="text-xl text-[#8ec5ff]">•</span>
+                Shower &amp; Bath
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-xl text-[#8ec5ff]">•</span>
+                Tile &amp; Backsplash
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-xl text-[#8ec5ff]">•</span>
+                Vanities &amp; Mirrors
+              </li>
+            </ul>
+
+            <button className="mt-4 w-fit rounded bg-[#0574C9] px-6 py-3 font-semibold text-white shadow hover:bg-[#0462A6]">
+              Learn More
+            </button>
+          </div>
+
+          <div className="md:w-1/3">
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <p className="text-sm text-blue-50">
+                &ldquo;It&apos;s obvious that the team takes pride in their work and would rather do the job
+                properly than rush or cut corners. Excellent workmanship—we highly recommend them and
+                wouldn&apos;t hesitate to work together again.&rdquo;
+              </p>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-blue-200">
+                Stephanie — Toronto, ON
               </p>
             </div>
           </div>

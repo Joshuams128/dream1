@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" role="img" aria-labelledby="title desc">
+  <title id="title">Bright spa bathroom with freestanding tub and glass shower</title>
+  <desc id="desc">Placeholder artwork representing a luxury bathroom renovation with stone tile and a soaking tub beside a glass shower.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6eef5"/>
+      <stop offset="100%" stop-color="#b6c8dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#g)"/>
+  <rect x="120" y="160" width="1360" height="750" rx="48" fill="#ffffff" opacity="0.72"/>
+  <path d="M280 720c0-88 96-160 214-160h212c118 0 214 72 214 160s-96 160-214 160H494c-118 0-214-72-214-160Z" fill="#d9e4ef"/>
+  <rect x="980" y="220" width="260" height="620" rx="36" fill="#cfdbe8" opacity="0.85"/>
+  <rect x="1020" y="260" width="180" height="540" rx="28" fill="#f7fafc"/>
+  <text x="200" y="320" fill="#0f4f83" font-family="'Inter', 'Segoe UI', sans-serif" font-size="64" font-weight="700">Spa Bathroom</text>
+  <text x="200" y="390" fill="#24577a" font-family="'Inter', 'Segoe UI', sans-serif" font-size="34" font-weight="600">Freestanding tub &amp; glass shower</text>
+  <text x="200" y="460" fill="#3d6684" font-family="'Inter', 'Segoe UI', sans-serif" font-size="28">Light-filled stone tile retreat</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" role="img" aria-labelledby="title desc">
+  <title id="title">Open concept kitchen with island seating</title>
+  <desc id="desc">Placeholder art representing a modern kitchen renovation with stone countertops and soft grey cabinetry.</desc>
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2f0ff"/>
+      <stop offset="100%" stop-color="#b6d1ed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#g3)"/>
+  <rect x="160" y="210" width="1280" height="700" rx="46" fill="#ffffff" opacity="0.82"/>
+  <rect x="220" y="270" width="1160" height="580" rx="34" fill="#d7e5f5"/>
+  <text x="230" y="370" fill="#0f4f83" font-family="'Inter','Segoe UI',sans-serif" font-size="58" font-weight="700">Kitchen &amp; Living Hub</text>
+  <text x="230" y="440" fill="#275e88" font-family="'Inter','Segoe UI',sans-serif" font-size="32" font-weight="600">Stone waterfall island · Custom millwork · Integrated lighting</text>
+  <text x="230" y="510" fill="#3a6c93" font-family="'Inter','Segoe UI',sans-serif" font-size="26">Comfortable flow between cooking and lounging</text>
+</svg>
