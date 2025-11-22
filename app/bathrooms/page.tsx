@@ -98,7 +98,7 @@ export default function BathroomsPage() {
               <li>Certified &amp; Licensed</li>
             </ul>
             <Link href="/portfolio">
-              <button className="mt-6 rounded bg-emerald-500 px-6 py-2 text-sm font-semibold text-white hover:bg-emerald-400">
+              <button className="mt-6 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
                 View Our Portfolio
               </button>
             </Link>

@@ -40,7 +40,7 @@ export default function ServicesPage() {
 
           {/* Text */}
           <div className="md:w-1/2 md:pl-8">
-            <h2 className="text-2xl font-semibold text-emerald-600">
+            <h2 className="text-2xl font-semibold text-[#0574C9]">
               Bathroom Renovations
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -49,14 +49,14 @@ export default function ServicesPage() {
               we can make your bathroom your favourite part of your home.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-emerald-600">
+            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-[#0574C9]">
               <span>▸ Quality Craftsmanship</span>
               <span>▸ Innovative Design</span>
               <span>▸ 20+ Years Experience</span>
             </div>
 
             <Link href="/bathrooms">
-              <button className="mt-8 rounded bg-emerald-500 px-6 py-2 text-sm font-semibold text-white hover:bg-emerald-400">
+              <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
                 Learn More
               </button>
             </Link>
@@ -64,7 +64,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Divider line */}
-        <div className="h-px w-full bg-emerald-200" />
+        <div className="h-px w-full bg-blue-100" />
 
         {/* SECTION 2 – Stone Veneers & Masonry */}
         <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
@@ -82,7 +82,7 @@ export default function ServicesPage() {
 
           {/* Text */}
           <div className="md:w-1/2 md:pl-8">
-            <h2 className="text-2xl font-semibold text-emerald-600">
+            <h2 className="text-2xl font-semibold text-[#0574C9]">
               Stone Veneers &amp; Masonry Services
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -91,7 +91,7 @@ export default function ServicesPage() {
               durability and timeless character to your home’s exterior.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-emerald-600">
+            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-[#0574C9]">
               <span>▸ Custom Design</span>
               <span>▸ High Durability</span>
               <span>▸ Variety of Styles</span>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
             </div>
 
             <Link href="/stone-veneers-masonry">
-              <button className="mt-8 rounded bg-emerald-500 px-6 py-2 text-sm font-semibold text-white hover:bg-emerald-400">
+              <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
                 Learn More
               </button>
             </Link>
@@ -114,7 +114,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Divider line */}
-        <div className="h-px w-full bg-emerald-200" />
+        <div className="h-px w-full bg-blue-100" />
 
         {/* SECTION 3 – Home Improvements */}
         <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
@@ -132,7 +132,7 @@ export default function ServicesPage() {
 
           {/* Text */}
           <div className="md:w-1/2 md:pl-8">
-            <h2 className="text-2xl font-semibold text-emerald-600">
+            <h2 className="text-2xl font-semibold text-[#0574C9]">
               Home Improvements
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -142,7 +142,7 @@ export default function ServicesPage() {
               your dreams.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-emerald-600">
+            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-[#0574C9]">
               <span>▸ Basement Remodels</span>
               <span>▸ Kitchen Renovations</span>
               <span>▸ Deck &amp; Patio Additions</span>
@@ -157,7 +157,7 @@ export default function ServicesPage() {
             </div>
 
             <Link href="/home-improvements">
-              <button className="mt-8 rounded bg-emerald-500 px-6 py-2 text-sm font-semibold text-white hover:bg-emerald-400">
+              <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
                 Learn More
               </button>
             </Link>
