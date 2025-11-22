@@ -23,7 +23,7 @@ export default function Home() {
                client’s vision and make it a reality.
             </p>
 
-            <button className="mt-6 bg-emerald-500 px-6 py-3 font-medium hover:bg-emerald-400">
+            <button className="mt-6 bg-[#0574C9] px-6 py-3 font-medium text-white hover:bg-[#0462A6]">
               Contact Us Today
             </button>
           </div>
@@ -40,7 +40,7 @@ export default function Home() {
         Durham Home Improvements, Repairs & Renovations
       </h2>
 
-      <p className="mt-2 text-emerald-600 font-semibold">
+      <p className="mt-2 font-semibold text-[#0574C9]">
         Industry Leaders for the Past 15 Years
       </p>
 
@@ -57,18 +57,22 @@ export default function Home() {
         <li>• Water Leak Repairs</li>
       </ul>
 
-      <button className="mt-6 bg-emerald-500 px-6 py-3 text-white hover:bg-emerald-400">
+      <button className="mt-6 bg-[#0574C9] px-6 py-3 text-white hover:bg-[#0462A6]">
         Get a Quote
       </button>
     </div>
 
     {/* RIGHT SIDE — IMAGE */}
-    <div className="md:w-1/2 relative">
-      <img
-        src="/house1.jpg"  
-        alt="Renovation example"
-        className="w-full rounded-lg shadow-lg object-cover"
-      />
+    <div className="md:w-1/2 relative h-full">
+      <div className="relative h-full min-h-[300px] w-full">
+        <Image
+          src="/house1.jpg"
+          alt="Renovation example"
+          fill
+          className="rounded-lg object-cover shadow-lg"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+        />
+      </div>
     </div>
 
   </div>
@@ -126,6 +130,62 @@ export default function Home() {
               <h3 className="mt-4 text-xl font-semibold">Outdoor Improvements</h3>
               <p className="mt-2 text-gray-700">
                 Create stunning outdoor spaces for summer entertaining.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DREAM HOME CALLOUT */}
+      <section className="relative isolate overflow-hidden bg-[#0f172a] py-16">
+        <Image
+          src="/bathroom-main.jpg"
+          alt="Luxury bathroom with soaking tub"
+          fill
+          className="object-cover opacity-50"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent" />
+
+        <div className="relative mx-auto flex max-w-5xl flex-col gap-8 px-6 md:flex-row md:items-center md:px-10">
+          <div className="md:w-2/3 text-white space-y-4">
+            <p className="text-sm uppercase tracking-wide text-blue-200">Bathroom &amp; Home Renovations</p>
+            <h3 className="text-4xl font-bold leading-tight">Create Your Dream Home</h3>
+            <p className="text-lg leading-relaxed text-blue-100">
+              Whether you&apos;re planning a complete renovation or a focused upgrade, we guide you from
+              design through installation. Our team specializes in updates that elevate comfort,
+              function, and style throughout your home.
+            </p>
+
+            <ul className="space-y-2 text-blue-100">
+              <li className="flex items-center gap-2">
+                <span className="text-xl text-[#8ec5ff]">•</span>
+                Shower &amp; Bath
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-xl text-[#8ec5ff]">•</span>
+                Tile &amp; Backsplash
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-xl text-[#8ec5ff]">•</span>
+                Vanities &amp; Mirrors
+              </li>
+            </ul>
+
+            <button className="mt-4 w-fit rounded bg-[#0574C9] px-6 py-3 font-semibold text-white shadow hover:bg-[#0462A6]">
+              Learn More
+            </button>
+          </div>
+
+          <div className="md:w-1/3">
+            <div className="rounded-lg bg-white/10 p-6 backdrop-blur">
+              <p className="text-sm text-blue-50">
+                &ldquo;It&apos;s obvious that the team takes pride in their work and would rather do the job
+                properly than rush or cut corners. Excellent workmanship—we highly recommend them and
+                wouldn&apos;t hesitate to work together again.&rdquo;
+              </p>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-blue-200">
+                Stephanie — Toronto, ON
               </p>
             </div>
           </div>
