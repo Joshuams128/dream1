@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" role="img" aria-labelledby="title desc">
+  <title id="title">Laundry room upgrade</title>
+  <desc id="desc">Placeholder art for a laundry renovation with cabinetry, sink, and counter space.</desc>
+  <defs>
+    <linearGradient id="g8" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e7f3fc"/>
+      <stop offset="100%" stop-color="#c6dcf1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#g8)"/>
+  <rect x="190" y="200" width="1220" height="720" rx="44" fill="#ffffff" opacity="0.82"/>
+  <rect x="240" y="260" width="1120" height="560" rx="34" fill="#dfeaf7"/>
+  <text x="250" y="360" fill="#0f4f83" font-family="'Inter','Segoe UI',sans-serif" font-size="56" font-weight="700">Laundry Room Refresh</text>
+  <text x="250" y="430" fill="#285f89" font-family="'Inter','Segoe UI',sans-serif" font-size="32" font-weight="600">Quartz counters · Deep sink · Built-in storage</text>
+  <text x="250" y="500" fill="#3a6c93" font-family="'Inter','Segoe UI',sans-serif" font-size="26">Durable finishes for daily use</text>
+</svg>
