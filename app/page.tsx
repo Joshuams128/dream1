@@ -6,23 +6,31 @@ export default function Home() {
     <main className="bg-white flex flex-col">
 
       {/* HERO SECTION */}
-      <section className="relative h-[600px] w-full">
+      <section className="relative min-h-[420px] w-full md:min-h-[560px] lg:min-h-[640px]">
         <Image
           src="/hero.jpg" // <-- Replace with your real hero image
           alt="Construction Hero"
           fill
+          priority
           className="object-cover"
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/45" />
 
-        <div className="absolute left-0 top-0 flex h-full w-full items-center">
-          <div className="ml-12 bg-black/60 p-10 max-w-lg text-white">
-            <h1 className="text-4xl font-bold">Dream Contractors Services</h1>
-            <p className="mt-4 text-lg">
-              Our mission is to create the dream home for our
-               client’s vision and make it a reality.
-            </p>
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto max-w-6xl px-4 py-10 text-white">
+            <div className="max-w-xl bg-black/55 p-6 backdrop-blur md:p-10">
+              <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+                Dream Contractors Services
+              </h1>
+              <p className="mt-4 text-base leading-relaxed md:text-lg">
+                Our mission is to create the dream home for our client’s vision and make it a reality.
+              </p>
 
+              <button className="mt-6 bg-[#0574C9] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0462A6] md:text-base">
+                Contact Us Today
+              </button>
+            </div>
             <button className="mt-6 bg-[#0574C9] px-6 py-3 font-medium text-white hover:bg-[#0462A6]">
               Contact Us Today
             </button>
@@ -31,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* 20 YEARS SECTION */}
-<section className="max-w-6xl mx-auto py-20 px-4">
+<section className="max-w-6xl mx-auto py-16 px-4 md:py-20">
   <div className="flex flex-col md:flex-row items-start gap-10">
     
     {/* LEFT SIDE — TEXT */}
@@ -95,6 +103,7 @@ export default function Home() {
                   alt="Bathroom Renovations"
                   fill
                   className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold">Bathroom Renovations</h3>
@@ -110,6 +119,7 @@ export default function Home() {
                   alt="Stone Veneers"
                   fill
                   className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold">Stone Veneers & Masonry</h3>
@@ -125,6 +135,7 @@ export default function Home() {
                   alt="Outdoor Improvements"
                   fill
                   className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold">Outdoor Improvements</h3>
@@ -144,6 +155,7 @@ export default function Home() {
           fill
           className="object-cover opacity-50"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent" />
 

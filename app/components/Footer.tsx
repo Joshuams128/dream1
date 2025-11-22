@@ -13,6 +13,7 @@ export function Footer() {
           <p className="text-xs text-slate-500">© {year} Build With Dream. All Rights Reserved.</p>
         </div>
 
+        <div className="flex items-center justify-center gap-4 text-sm font-medium text-[#0574C9] md:justify-end">
         <div className="flex items-center justify-center gap-4 text-sm font-medium text-[#0574C9]">
           <a
             href="https://www.instagram.com"

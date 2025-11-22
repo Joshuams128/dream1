@@ -2,6 +2,13 @@ import Image from "next/image";
 
 const categories = [
   "All",
+  "Bathroom",
+  "Kitchen",
+  "Living Spaces",
+  "Laundry",
+  "Bedrooms",
+  "Stairs",
+  "Dining",
   "Backsplash",
   "Bathroom",
   "Foundation Repair",
@@ -13,6 +20,74 @@ const categories = [
 
 const projects = [
   {
+    title: "Spa Ensuite Retreat",
+    category: "Bathroom",
+    description:
+      "Stone tile surrounds a freestanding tub and glass shower for a calming ensuite escape.",
+    image: "/portfolio/portfolio-bath-shower.svg",
+  },
+  {
+    title: "Double Vanity Bathroom",
+    category: "Bathroom",
+    description:
+      "Bright double vanity with generous storage, quartz counters, and warm brushed hardware.",
+    image: "/portfolio/portfolio-vanity.svg",
+  },
+  {
+    title: "Open Concept Kitchen",
+    category: "Kitchen",
+    description:
+      "Entertaining-friendly kitchen with a waterfall island, seating, and connected living area.",
+    image: "/portfolio/portfolio-kitchen-island.svg",
+  },
+  {
+    title: "Wine Bar Millwork",
+    category: "Kitchen",
+    description:
+      "Custom built-in with glass displays, X-shelf wine storage, and a dedicated beverage fridge.",
+    image: "/portfolio/portfolio-wine-bar.svg",
+  },
+  {
+    title: "Range & Hood Feature",
+    category: "Kitchen",
+    description:
+      "Marble-inspired backsplash and tailored hood surround highlight a professional gas range.",
+    image: "/portfolio/portfolio-range.svg",
+  },
+  {
+    title: "Fireplace Feature Wall",
+    category: "Living Spaces",
+    description:
+      "Modern fireplace surround with media integration and cozy seating anchored in warm wood floors.",
+    image: "/portfolio/portfolio-fireplace.svg",
+  },
+  {
+    title: "Dining Room Refresh",
+    category: "Dining",
+    description:
+      "Neutral dining space layered with greenery, sculptural art, and comfortable seating for six.",
+    image: "/portfolio/portfolio-dining.svg",
+  },
+  {
+    title: "Laundry Room Upgrade",
+    category: "Laundry",
+    description:
+      "Durable cabinetry, deep sink, and stone counters transform a hardworking laundry into a tidy workspace.",
+    image: "/portfolio/portfolio-laundry.svg",
+  },
+  {
+    title: "Bedroom Retreat",
+    category: "Bedrooms",
+    description:
+      "Soft palettes, arched windows, and layered textiles create a restful primary bedroom oasis.",
+    image: "/portfolio/portfolio-bedroom.svg",
+  },
+  {
+    title: "Staircase Detailing",
+    category: "Stairs",
+    description:
+      "Updated staircase with painted risers, oak treads, and iron spindles for a crisp transitional look.",
+    image: "/portfolio/portfolio-staircase.svg",
     title: "Exterior Restoration",
     category: "All",
     description:
