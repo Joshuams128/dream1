@@ -29,7 +29,7 @@ export default function BathroomsPage() {
               Let&apos;s Take the Stress Out of Your Bathroom Renovations
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              The experts at Clayson Construction can help you with complete
+              The experts at Build With Dream can help you with complete
               bathroom renovations in your Durham home. Renovating your
               bathroom is one of the most difficult home improvement tasks you
               can tackle by yourself. We take the hassle out of this process by

@@ -8,7 +8,7 @@ import { Footer } from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Clayson Construction",
+  title: "Build With Dream",
   description: "Renovations, repairs, and home improvements in Durham Region.",
 };
 
