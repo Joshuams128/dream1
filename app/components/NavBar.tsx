@@ -10,10 +10,10 @@ export function NavBar() {
   return (
     <header className="bg-[#0574C9]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:py-5">
-        
+
         {/* Logo + name */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-10 w-10">
+          <div className="relative h-12 w-12 md:h-14 md:w-14">
             <Image
               src="/dreamlogo.png"
               alt="Dream logo"
@@ -21,9 +21,7 @@ export function NavBar() {
               className="object-contain"
             />
           </div>
-          <span className="text-lg font-semibold tracking-wide text-white uppercase">
-            Build With Dream
-          </span>
+          <span className="sr-only">Build With Dream</span>
         </Link>
 
         {/* Desktop Menu */}
