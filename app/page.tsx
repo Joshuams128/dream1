@@ -103,7 +103,7 @@ export default function Home() {
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-semibold">Bathroom Renovations</h3>
+              <h3 className="mt-4 text-xl font-semibold text-gray-900">Bathroom Renovations</h3>
               <p className="mt-2 text-gray-700">
                 Bathroom renovations are one of the most difficult projects to tackle.
               </p>
@@ -119,7 +119,7 @@ export default function Home() {
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-semibold">Stone Veneers & Masonry</h3>
+              <h3 className="mt-4 text-xl font-semibold text-gray-900">Stone Veneers & Masonry</h3>
               <p className="mt-2 text-gray-700">
                 Transform your home with natural or manufactured stone.
               </p>
@@ -135,7 +135,7 @@ export default function Home() {
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-semibold">Outdoor Improvements</h3>
+              <h3 className="mt-4 text-xl font-semibold text-gray-900">Outdoor Improvements</h3>
               <p className="mt-2 text-gray-700">
                 Create stunning outdoor spaces for summer entertaining.
               </p>
