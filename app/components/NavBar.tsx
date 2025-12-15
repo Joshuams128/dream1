@@ -35,9 +35,6 @@ export function NavBar() {
           <Link href="/portfolio" className="hover:underline underline-offset-4">
             Portfolio
           </Link>
-          <Link href="/testimonials" className="hover:underline underline-offset-4">
-            Testimonials
-          </Link>
           <Link href="/contact-us" className="hover:underline underline-offset-4">
             Contact Us
           </Link>

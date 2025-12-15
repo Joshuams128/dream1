@@ -8,7 +8,7 @@ export default function BathroomsPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/services-hero.jpg"
+          src="/bathroomhero.jpeg"
           alt="Bathroom sinks"
           fill
           className="object-cover"
@@ -25,7 +25,7 @@ export default function BathroomsPage() {
         {/* Top row: text + image */}
         <section className="grid gap-10 md:grid-cols-[1.5fr,1.2fr] items-center">
           <div>
-            <h2 className="text-3xl font-semibold text-brandDark">
+            <h2 className="text-3xl font-semibold text-black">
               Let&apos;s Take the Stress Out of Your Bathroom Renovations
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -43,16 +43,6 @@ export default function BathroomsPage() {
             </ul>
           </div>
 
-          <div className="grid gap-4">
-            <div className="relative h-64 w-full overflow-hidden">
-              <Image
-                src="/bathroom-main.jpg"
-                alt="Shower renovation"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
         </section>
 
         {/* Gallery + callout */}
@@ -74,35 +64,22 @@ export default function BathroomsPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative h-64 w-full">
+                <div className="relative h-64 w-full">
               <Image
                 src="/bathroom-3.jpg"
-                alt="Bathroom project 3"
+                alt="Bathroom project 2"
                 fill
                 className="object-cover"
               />
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold text-brandDark">
-              Unparalleled Craftsmanship
-            </h3>
-            <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Your new bathroom is only limited by your imagination. From a
-              simple refresh to a complete transformation, we help you create a
-              space that feels calm, modern, and built to last.
-            </p>
-            <ul className="mt-4 list-disc pl-5 text-sm text-slate-700 md:text-base space-y-1">
-              <li>20+ Years Experience</li>
-              <li>Certified &amp; Licensed</li>
-            </ul>
-            <Link href="/portfolio">
               <button className="mt-6 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
                 View Our Portfolio
               </button>
-            </Link>
           </div>
+
+          
+           
         </section>
       </div>
     </main>

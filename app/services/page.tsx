@@ -68,17 +68,13 @@ export default function ServicesPage() {
           {/* Text */}
           <div className="md:w-1/2 md:pl-8">
             <h2 className="text-2xl font-semibold text-[#0574C9]">
-              Residential Transformations
+              Washroom Transformations
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              From modern washrooms to full-home refreshes, we design and build spaces that elevate daily life. Every room is planned with your routines in mind—lighting, storage, and finishes that feel tailored to you.
+              Step into a space designed for comfort, style, and everyday ease.
+               From sleek modern updates to complete washroom overhauls, we create rooms that elevate your daily routine. Thoughtful lighting, smart storage, and quality finishes come together to make your
+               washroom feel beautifully tailored to you.
             </p>
-
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-[#0574C9]">
-              <span>▸ Spa-inspired washrooms</span>
-              <span>▸ Full-home remodels</span>
-              <span>▸ Precision tile work</span>
-            </div>
 
             <Link href="/bathrooms">
               <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
@@ -91,7 +87,82 @@ export default function ServicesPage() {
         {/* Divider line */}
         <div className="h-px w-full bg-blue-100" />
 
-        {/* SECTION 2 – Stone Veneers & Masonry */}
+        {/* SECTION 1 – Kitchen Renovations */}
+        <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
+          {/* Circle image */}
+          <div className="flex justify-center md:justify-start md:w-1/2">
+            <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
+              <Image
+                src="/kitchen1.jpeg"
+                alt="Luxury kitchen renovation"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
+              />
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="md:w-1/2 md:pl-8">
+            <h2 className="text-2xl font-semibold text-[#0574C9]">
+              Kitchen Transformations
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
+             Step into a kitchen designed for comfort, style, and everyday living.
+From sleek modern upgrades to complete kitchen transformations, we create spaces that elevate how you cook, gather,
+ and connect. Thoughtful layouts, smart storage, and quality finishes come 
+together to make your kitchen feel beautifully tailored to you.
+            </p>
+
+            <Link href="/kitchen-renovation">
+              <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+                Learn More
+              </button>
+            </Link>
+          </div>
+        </section>
+
+        {/* Divider line */}
+        <div className="h-px w-full bg-blue-100" />
+
+        {/* SECTION 3 – HOME TRANS */}
+        <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
+          {/* Circle image */}
+          <div className="flex justify-center md:justify-start md:w-1/2">
+            <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
+              <Image
+                src="/hometrans.jpg"
+                alt="Luxury bathroom renovation"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
+              />
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="md:w-1/2 md:pl-8">
+            <h2 className="text-2xl font-semibold text-[#0574C9]">
+              Home Transformation 
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
+             From modern upgrades to complete home makeovers, we design and build spaces that feel fresh,
+             functional, and uniquely yours. Every detail—from layout to
+             finishes—is crafted to elevate how you live every day.
+            </p>
+
+            <Link href="/home-transformation">
+              <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+                Learn More
+              </button>
+            </Link>
+          </div>
+        </section>
+
+        {/* Divider line */}
+        <div className="h-px w-full bg-blue-100" />
+
+        {/*SECTION 3 –OFfice */}
         <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
           {/* Circle image */}
           <div className="flex justify-center md:justify-start md:w-1/2">
@@ -109,27 +180,16 @@ export default function ServicesPage() {
           {/* Text */}
           <div className="md:w-1/2 md:pl-8">
             <h2 className="text-2xl font-semibold text-[#0574C9]">
-              Commercial &amp; Office Renovations
+              Office Renovations
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Renovations that support productivity and client experiences. From reception areas to boardrooms, we deliver polished environments that keep operations moving and match your brand standards.
+             Create a workspace that reflects your brand and supports seamless productivity. From reception areas to boardrooms, 
+             we deliver modern, functional environments that enhance client impressions and keep your operations running smoothly.Create a workspace that reflects
+              your brand and supports seamless productivity. From reception areas to boardrooms, we deliver modern, functional environments that enhance client impressions
+              and keep your operations running smoothly.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-[#0574C9]">
-              <span>▸ Phased scheduling</span>
-              <span>▸ Budget &amp; deadline alignment</span>
-              <span>▸ Tenant-friendly workflows</span>
-            </div>
-
-            {/* Testimonial-style box */}
-            <div className="mt-6 rounded bg-slate-50 px-4 py-3 text-xs italic text-slate-700 md:text-sm">
-              &quot;Steve was helpful, prompt and courteous. He brought over
-              samples of stone to choose from. He explained everything he was
-              doing, called to give updates and did a very good job. The stone
-              work looks great.&quot; – Thomas, Toronto ON
-            </div>
-
-            <Link href="/stone-veneers-masonry">
+            <Link href="/office-renovations">
               <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
                 Learn More
               </button>
