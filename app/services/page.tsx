@@ -24,31 +24,6 @@ export default function ServicesPage() {
       {/* CONTENT WRAPPER */}
       <div className="mx-auto max-w-6xl px-4 py-16 space-y-16 md:space-y-20">
 
-        {/* OVERVIEW */}
-        <section className="space-y-4 text-center md:space-y-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0574C9]">
-            Renovations reimagined
-          </p>
-          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
-            Spaces tailored to how you live and work
-          </h2>
-          <p className="mx-auto max-w-3xl text-sm leading-relaxed text-slate-700 md:text-base">
-            We specialize in residential and commercial renovations, bringing expertise, precision, and creativity to every project. More than construction, we see renovations as transformations—enhancing the way you live and work.
-          </p>
-          <p className="mx-auto max-w-3xl text-sm leading-relaxed text-slate-700 md:text-base">
-            Our commitment to quality and attention to detail ensure flawless execution, delivering spaces that exceed expectations. We tailor each project to your vision, working closely with you from consultation to completion.
-          </p>
-          <p className="mx-auto max-w-3xl text-sm leading-relaxed text-slate-700 md:text-base">
-            With a proven track record in the Greater Toronto Area, we pride ourselves on meeting deadlines, budgets, and building lasting relationships.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 text-sm font-semibold text-[#0574C9] md:text-base">
-            <span className="rounded-full bg-blue-50 px-4 py-2">Home transformations</span>
-            <span className="rounded-full bg-blue-50 px-4 py-2">Washrooms &amp; spas</span>
-            <span className="rounded-full bg-blue-50 px-4 py-2">Outdoor living</span>
-            <span className="rounded-full bg-blue-50 px-4 py-2">Office renovations</span>
-            <span className="rounded-full bg-blue-50 px-4 py-2">Custom tiling</span>
-          </div>
-        </section>
 
         {/* SECTION 1 – Bathroom Renovations */}
         <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
@@ -125,6 +100,45 @@ together to make your kitchen feel beautifully tailored to you.
         {/* Divider line */}
         <div className="h-px w-full bg-blue-100" />
 
+        {/* SECTION 3 – Basement */}
+<section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
+  {/* Circle image */}
+  <div className="flex justify-center md:justify-start md:w-1/2">
+    <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
+      <Image
+        src="/basement2.jpeg"
+        alt="Basement renovation transformation"
+        fill
+        className="object-cover"
+        sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
+      />
+    </div>
+  </div>
+
+  {/* Text */}
+  <div className="md:w-1/2 md:pl-8">
+    <h2 className="text-2xl font-semibold text-[#0574C9]">
+      Basement Renovations
+    </h2>
+    <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
+      We transform underused basements into comfortable, functional living
+      spaces—whether it’s a family room, home office, or entertainment area.
+      Thoughtful layouts and quality finishes ensure your basement feels like a
+      natural extension of your home.
+    </p>
+
+    <Link href="/basement-renovations">
+      <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+        Learn More
+      </button>
+    </Link>
+  </div>
+</section>
+
+
+        {/* Divider line */}
+        <div className="h-px w-full bg-blue-100" />
+
         {/* SECTION 3 – HOME TRANS */}
         <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
           {/* Circle image */}
@@ -168,7 +182,7 @@ together to make your kitchen feel beautifully tailored to you.
           <div className="flex justify-center md:justify-start md:w-1/2">
             <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
               <Image
-                src="/service1.jpg"
+                src="/niro-law.webp"
                 alt="Office renovation with statement wall"
                 fill
                 className="object-cover"
@@ -183,10 +197,8 @@ together to make your kitchen feel beautifully tailored to you.
               Office Renovations
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-             Create a workspace that reflects your brand and supports seamless productivity. From reception areas to boardrooms, 
-             we deliver modern, functional environments that enhance client impressions and keep your operations running smoothly.Create a workspace that reflects
-              your brand and supports seamless productivity. From reception areas to boardrooms, we deliver modern, functional environments that enhance client impressions
-              and keep your operations running smoothly.
+            Create a workspace that reflects your brand and supports productivity. From reception areas to boardrooms, we deliver modern, functional
+             environments that enhance client impressions and keep operations running smoothly.
             </p>
 
             <Link href="/office-renovations">
@@ -200,51 +212,7 @@ together to make your kitchen feel beautifully tailored to you.
         {/* Divider line */}
         <div className="h-px w-full bg-blue-100" />
 
-        {/* SECTION 3 – Home Improvements */}
-        <section className="flex flex-col items-center gap-10 md:flex-row md:items-center">
-          {/* Circle image */}
-          <div className="flex justify-center md:justify-start md:w-1/2">
-            <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
-              <Image
-                src="/outdoor.jpg"
-                alt="Outdoor living renovation"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
-              />
-            </div>
-          </div>
-
-          {/* Text */}
-          <div className="md:w-1/2 md:pl-8">
-            <h2 className="text-2xl font-semibold text-[#0574C9]">
-              Exteriors, Masonry &amp; Outdoor Living
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Curb appeal and gathering spaces built to last—from stone veneers and fireplaces to decks, patios, and covered porches. We also handle specialty tiling for patios, entries, and feature walls.
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm font-semibold text-[#0574C9]">
-              <span>▸ Outdoor kitchens &amp; patios</span>
-              <span>▸ Stonework &amp; fireplaces</span>
-              <span>▸ Weather-ready materials</span>
-            </div>
-
-            <div className="mt-6 rounded bg-slate-50 px-4 py-3 text-xs italic text-slate-700 md:text-sm">
-              &quot;It&apos;s obvious that Steve takes pride in his work and
-              would rather do the job properly than to rush or cut corners –
-              something that is a rare find these days. Excellent workmanship.
-              We highly recommend this company and wouldn&apos;t hesitate to
-              work with them again.&quot; – Stephanie, Toronto ON
-            </div>
-
-            <Link href="/home-improvements">
-              <button className="mt-8 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-                Learn More
-              </button>
-            </Link>
-          </div>
-        </section>
+        
 
       </div>
     </main>
