@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const serviceLinks = [
-  { href: "/bathrooms", label: "Bathrooms" },
+  { href: "/bathrooms", label: "Washroom Renovations" },
   { href: "/kitchen-renovation", label: "Kitchen Renovations" },
   { href: "/basement-renovations", label: "Basement Renovations" },
-  { href: "/home-transformation", label: "Home Transformations" },
+  { href: "/home-improvements", label: "Full-Home Renovations" },
   { href: "/office-renovations", label: "Office Renovations" },
 ];
 
@@ -20,12 +20,12 @@ export function NavBar() {
     <header className="bg-[#0574C9]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:py-5">
 
-        {/* Logo + name */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-12 w-12 md:h-14 md:w-14">
             <Image
               src="/dreamlogo.png"
-              alt="Dream logo"
+              alt="Build With Dream logo"
               fill
               className="object-contain"
             />
@@ -33,42 +33,46 @@ export function NavBar() {
           <span className="sr-only">Build With Dream</span>
         </Link>
 
-        {/* Desktop Menu */}
+        {/* DESKTOP MENU */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
           <Link href="/" className="hover:underline underline-offset-4">
             Home
-          </Link>
-          <div
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-            onFocus={() => setServicesOpen(true)}
-            onBlur={() => setServicesOpen(false)}
-          >
-            <Link href="/services" className="flex items-center gap-1 hover:underline underline-offset-4">
-              Services
-              <span aria-hidden="true">▾</span>
-            </Link>
-            <div
-              className={`absolute left-0 top-full mt-2 w-56 rounded-md bg-white py-2 text-gray-900 shadow-lg transition-opacity ${servicesOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
+              href="/services"
+              className="flex items-center gap-1 hover:underline underline-offset-4"
             >
-              <Link
-                href="/services"
-                className="block px-4 py-2 text-sm hover:bg-gray-100"
+              Services
+              <svg
+                className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
               >
-                All Services
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
+
+            <div className="absolute left-0 top-full z-50 hidden w-56 rounded-md bg-white py-3 shadow-lg group-hover:block">
+              <Link href="/bathrooms" className="block px-4 py-2 text-sm text-slate-800 hover:bg-slate-100">
+                Washroom Renovations
               </Link>
-              {serviceLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block px-4 py-2 text-sm hover:bg-gray-100"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              <Link href="/kitchen-renovation" className="block px-4 py-2 text-sm text-slate-800 hover:bg-slate-100">
+                Kitchen Renovations
+              </Link>
+              <Link href="/basement-renovations" className="block px-4 py-2 text-sm text-slate-800 hover:bg-slate-100">
+                Basement Renovations
+              </Link>
+              <Link href="/home-transformation" className="block px-4 py-2 text-sm text-slate-800 hover:bg-slate-100">
+                Full-Home Renovations
+              </Link>
+              <Link href="/office-renovations" className="block px-4 py-2 text-sm text-slate-800 hover:bg-slate-100">
+                Office Renovations
+              </Link>
             </div>
           </div>
+
           <Link href="/portfolio" className="hover:underline underline-offset-4">
             Portfolio
           </Link>
@@ -77,7 +81,7 @@ export function NavBar() {
           </Link>
         </nav>
 
-        {/* Mobile Hamburger */}
+        {/* MOBILE TOGGLE */}
         <button
           className="md:hidden text-white"
           onClick={() => {
@@ -88,68 +92,39 @@ export function NavBar() {
             }
           }}
         >
-          {open ? (
-            <span className="text-2xl">&times;</span> // X icon
-          ) : (
-            <span className="text-3xl">&#9776;</span> // hamburger
-          )}
+          {open ? <span className="text-2xl">&times;</span> : <span className="text-3xl">&#9776;</span>}
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* MOBILE MENU */}
       {open && (
         <nav className="md:hidden bg-[#0462A6] px-6 py-4 space-y-4 text-white text-sm font-medium flex flex-col">
-          <Link href="/" onClick={() => setOpen(false)} className="block">
-            Home
-          </Link>
-          <div className="space-y-2">
-            <button
-              onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex w-full items-center justify-between"
-            >
-              <span>Services</span>
-              <span aria-hidden="true">{servicesOpen ? "▴" : "▾"}</span>
+          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+
+          {/* MOBILE SERVICES */}
+          <div className="flex items-center justify-between">
+            <Link href="/services" onClick={() => setOpen(false)}>
+              Services
+            </Link>
+            <button onClick={() => setServicesOpen(!servicesOpen)}>
+              <span className="text-lg">{servicesOpen ? "▲" : "▼"}</span>
             </button>
-            {servicesOpen && (
-              <div className="space-y-2 pl-4">
-                <Link
-                  href="/services"
-                  onClick={() => {
-                    setOpen(false);
-                    setServicesOpen(false);
-                  }}
-                  className="block"
-                >
-                  All Services
-                </Link>
-                {serviceLinks.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => {
-                      setOpen(false);
-                      setServicesOpen(false);
-                    }}
-                    className="block"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
           </div>
-          <Link href="/portfolio" onClick={() => setOpen(false)} className="block">
-            Portfolio
-          </Link>
-          <Link href="/testimonials" onClick={() => setOpen(false)} className="block">
-            Testimonials
-          </Link>
-          <Link href="/contact-us" onClick={() => setOpen(false)} className="block">
-            Contact Us
-          </Link>
+
+          {servicesOpen && (
+            <div className="ml-4 flex flex-col space-y-2 text-sm">
+              <Link href="/bathrooms" onClick={() => setOpen(false)}>Washroom Renovations</Link>
+              <Link href="/kitchen-renovation" onClick={() => setOpen(false)}>Kitchen Renovations</Link>
+              <Link href="/basement-renovations" onClick={() => setOpen(false)}>Basement Renovations</Link>
+              <Link href="/home-improvements" onClick={() => setOpen(false)}>Full-Home Renovations</Link>
+              <Link href="/office-renovations" onClick={() => setOpen(false)}>Office Renovations</Link>
+            </div>
+          )}
+
+          <Link href="/portfolio" onClick={() => setOpen(false)}>Portfolio</Link>
+          <Link href="/contact-us" onClick={() => setOpen(false)}>Contact Us</Link>
         </nav>
       )}
-
     </header>
   );
 }
