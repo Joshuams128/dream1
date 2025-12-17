@@ -86,17 +86,18 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* RIGHT SIDE — IMAGE (HIDDEN ON MOBILE) */}
-            <div className="hidden md:block md:w-1/2">
-              <div className="relative w-full overflow-hidden rounded-lg shadow-lg h-[300px]">
-                <Image
-                  src="/house1.jpg"
-                  alt="Renovation example"
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  loading="lazy"
-                />
+            {/* RIGHT SIDE — VIDEO */}
+            <div className="md:w-1/2">
+              <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
+                <video
+                  src="/basement-video.mov"
+                  className="w-full h-auto rounded-lg"
+                  controls
+                  playsInline
+                  muted
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
