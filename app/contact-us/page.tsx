@@ -104,9 +104,11 @@ export default function ContactPage() {
                 >
                   <option value="bathrooms">Washroom Transformation</option>
                   <option value="kitchens">Kitchen Transformation</option>
-                  <option value="windows"> Office Renovations</option>
+                  <option value="office"> Office Renovations</option>
                   <option value="home">Home Improvement Services</option>
-                  <option value="outdoor">Basement Renovations</option>
+                  <option value="basement">Basement Renovations</option>
+                   <option value="else">Something Else</option>
+
 
                 </select>
               </div>

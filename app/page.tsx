@@ -272,14 +272,22 @@ export default function Home() {
           </div>
 
           {/* View All Services Button */}
-          <div className="mt-14 flex justify-center">
+          <div className="mt-14 flex flex-col sm:flex-row items-center gap-4 justify-center">
             <Link
               href="/services"
-              className="mt-6 inline-block bg-[#0574C9] px-6 py-3 text-white hover:bg-[#0462A6]"
+              className="inline-block bg-[#0574C9] px-6 py-3 text-white hover:bg-[#0462A6]"
             >
               View All Services
             </Link>
+
+            <Link
+              href="/portfolio"
+              className="inline-block bg-[#0574C9] px-6 py-3 text-white hover:bg-[#0462A6]"
+            >
+              View Portfolio
+            </Link>
           </div>
+          
         </div>
       </section>
     </main>
