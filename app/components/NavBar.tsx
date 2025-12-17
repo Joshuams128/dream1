@@ -8,7 +8,7 @@ const serviceLinks = [
   { href: "/bathrooms", label: "Washroom Renovations" },
   { href: "/kitchen-renovation", label: "Kitchen Renovations" },
   { href: "/basement-renovations", label: "Basement Renovations" },
-  { href: "/home-improvements", label: "Full-Home Renovations" },
+  { href: "/home-transformation", label: "Full-Home Renovations" },
   { href: "/office-renovations", label: "Office Renovations" },
 ];
 

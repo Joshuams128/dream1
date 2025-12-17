@@ -76,7 +76,7 @@ export default function BathroomsPage() {
              <div className="mt-6 flex flex-wrap gap-3">
   <Link href="/portfolio?category=Bathroom">
     <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-      View Our Portfolio
+      View More Photos
     </button>
   </Link>
 

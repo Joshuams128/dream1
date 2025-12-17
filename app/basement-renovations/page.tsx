@@ -16,7 +16,7 @@ export default function BathroomsPage() {
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative flex h-full items-center justify-center">
           <h1 className="text-4xl font-semibold text-white md:text-5xl">
-            Basement Renovations
+            Basement 
           </h1>
         </div>
       </section>

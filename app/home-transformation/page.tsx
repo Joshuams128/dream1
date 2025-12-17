@@ -16,7 +16,7 @@ export default function HomeTransformationsPage() {
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative flex h-full items-center justify-center">
           <h1 className="text-4xl font-semibold text-white md:text-5xl">
-            Home Transformations
+            Full-Home 
           </h1>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function HomeTransformationsPage() {
            <div className="mt-6 flex flex-wrap gap-3">
   <Link href="/portfolio?category=Home%20Transformations">
     <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-      View Our Portfolio
+      View More Photos
     </button>
   </Link>
 
