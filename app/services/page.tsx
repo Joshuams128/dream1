@@ -8,7 +8,7 @@ export default function ServicesPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/servicesbanner.jpg" // put a bathroom header img here
+          src="assets/living-2.jpg" // put a bathroom header img here
           alt="Bathroom sinks"
           fill
           className="object-cover"
@@ -68,7 +68,7 @@ export default function ServicesPage() {
           <div className="flex justify-center md:justify-start md:w-1/2">
             <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
               <Image
-                src="/kitchen1.jpeg"
+                src="/assets/kitchen-4.jpg"
                 alt="Luxury kitchen renovation"
                 fill
                 className="object-cover"
@@ -106,7 +106,7 @@ together to make your kitchen feel beautifully tailored to you.
   <div className="flex justify-center md:justify-start md:w-1/2">
     <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
       <Image
-        src="/basement2.jpeg"
+        src="/assets/basement-3.jpg"
         alt="Basement renovation transformation"
         fill
         className="object-cover"
@@ -145,7 +145,7 @@ together to make your kitchen feel beautifully tailored to you.
           <div className="flex justify-center md:justify-start md:w-1/2">
             <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
               <Image
-                src="/hometrans.jpg"
+                src="/assets/living-1.jpg"
                 alt="Luxury bathroom renovation"
                 fill
                 className="object-cover"
@@ -182,7 +182,7 @@ together to make your kitchen feel beautifully tailored to you.
           <div className="flex justify-center md:justify-start md:w-1/2">
             <div className="relative aspect-square w-72 max-w-full overflow-hidden rounded-full shadow-md">
               <Image
-                src="/niro-law.webp"
+                src="/niro-law.png"
                 alt="Office renovation with statement wall"
                 fill
                 className="object-cover"

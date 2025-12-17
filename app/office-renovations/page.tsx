@@ -8,7 +8,7 @@ export default function BathroomsPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/niro-hero.webp"
+          src="/niro-hero.png"
           alt="Modern office interior"
           fill
           className="object-cover"
@@ -43,9 +43,9 @@ export default function BathroomsPage() {
               <li>Boardrooms &amp; meeting spaces</li>
             </ul>
 
-            <Link href="/portfolio">
+            <Link href="/contact-us">
               <button className="mt-6 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-                View Our Office Projects
+                Contact Us
               </button>
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default function BathroomsPage() {
           {/* LARGE IMAGE */}
           <div className="relative h-[360px] w-full md:h-[420px]">
             <Image
-              src="/niro-hero.webp"
+              src="/niro-hero.png"
               alt="Renovated office workspace"
               fill
               className="object-cover rounded-lg shadow-lg"

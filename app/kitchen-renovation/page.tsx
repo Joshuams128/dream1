@@ -8,7 +8,7 @@ export default function BathroomsPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/kitchen1.jpeg"
+          src="/assets/kitchen-1.jpg"
           alt="Bathroom sinks"
           fill
           className="object-cover"
@@ -48,7 +48,7 @@ export default function BathroomsPage() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="relative h-64 w-full">
               <Image
-                src="/kitchen2.jpeg"
+                src="/assets/kitchen-2.jpg"
                 alt="kitchen project 1"
                 fill
                 className="object-cover"
@@ -56,7 +56,7 @@ export default function BathroomsPage() {
             </div>
             <div className="relative h-64 w-full">
               <Image
-                src="/kitchen3.jpeg"
+                src="/assets/kitchen-3.jpg"
                 alt="kitchen project "
                 fill
                 className="object-cover"
@@ -64,16 +64,27 @@ export default function BathroomsPage() {
             </div>
                 <div className="relative h-64 w-full">
               <Image
-                src="/kitchen4.jpeg"
+                src="/assets/kitchen-4.jpg"
                 alt="kitchen project 3"
                 fill
                 className="object-cover"
               />
             </div>
 
-              <button className="mt-6 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-                View Our Portfolio
-              </button>
+             <div className="mt-6 flex flex-wrap gap-3">
+  <Link href="/portfolio?category=Kitchen">
+    <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+      View Our Portfolio
+    </button>
+  </Link>
+
+  <Link href="/contact-us">
+    <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+      Contact Us
+    </button>
+  </Link>
+</div>
+
           </div>
 
           

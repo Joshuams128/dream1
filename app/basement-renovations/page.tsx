@@ -8,7 +8,7 @@ export default function BathroomsPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/basement2.jpeg"
+          src="/assets/basement-3.jpg"
           alt="Finished basement renovation"
           fill
           className="object-cover"
@@ -43,17 +43,26 @@ export default function BathroomsPage() {
               <li>Custom storage &amp; built-ins</li>
             </ul>
 
-            <Link href="/portfolio">
-              <button className="mt-6 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-                View Our Basement Projects
-              </button>
-            </Link>
+            <div className="mt-6 flex flex-wrap gap-3">
+  <Link href="/portfolio?category=Basements">
+    <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+      View More Photos
+    </button>
+  </Link>
+
+  <Link href="/contact-us">
+    <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+      Contact Us
+    </button>
+  </Link>
+</div>
+
           </div>
 
           {/* LARGE IMAGE */}
           <div className="relative h-[360px] w-full md:h-[420px]">
             <Image
-              src="/basement-pic.JPG"
+              src="/assets/basement-1.jpg"
               alt="Finished basement living area"
               fill
               className="object-cover rounded-lg shadow-lg"

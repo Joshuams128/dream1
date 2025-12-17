@@ -1,18 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
 const categories = [
   "All",
-  "Bathroom",
+  "Washroom",
   "Kitchen",
-  "Living Spaces",
-  "Laundry",
-  "Bedrooms",
-  "Stairs",
-  "Dining",
+  "Home Transformations",
+  "Basements"
 ] as const;
 
 type Category = (typeof categories)[number];
@@ -27,67 +24,44 @@ type Project = {
 // ✅ 6 image slots per category (edit these paths + titles)
 const projects: Project[] = [
   // Bathroom (6)
-  { title: "Bathroom Project 1", category: "Bathroom", image: "/assets/basement2.jpeg", description: "Add description..." },
-  { title: "Bathroom Project 2", category: "Bathroom", image: "/assets/bathroom-1.jpg", description: "Add description..." },
-  { title: "Bathroom Project 3", category: "Bathroom", image: "/assets/bathroom-3.jpg", description: "Add description..." },
-  { title: "Bathroom Project 4", category: "Bathroom", image: "/assets/bathroom-4.jpg", description: "Add description..." },
-  { title: "Bathroom Project 5", category: "Bathroom", image: "/assets/bathroom-5.jpg", description: "Add description..." },
-  { title: "Bathroom Project 6", category: "Bathroom", image: "/assets/bathroom-6.jpg", description: "Add description..." },
+  { title: "Washroom  1", category: "Washroom", image: "/assets/bathroom-1.jpg", },
+  { title: "Washroom  2", category: "Washroom", image: "/assets/bathroom-2.jpg",  },
+  { title: "Washroom  3", category: "Washroom", image: "/assets/bathroom-3.jpg",  },
+  { title: "Washroom  4", category: "Washroom", image: "/assets/bathroom-4.jpg", },
+  { title: "Washroom  5", category: "Washroom", image: "/assets/bathroom-5.jpg", },
+  { title: "Washroom  6", category: "Washroom", image: "/assets/bathroom-6.jpg", },
 
   // Kitchen (6)
-  { title: "Kitchen Project 1", category: "Kitchen", image: "/assets/kitchen-1.jpg", description: "Add description..." },
-  { title: "Kitchen Project 2", category: "Kitchen", image: "/assets/kitchen-2.jpg", description: "Add description..." },
-  { title: "Kitchen Project 3", category: "Kitchen", image: "/assets/kitchen-3.jpg", description: "Add description..." },
-  { title: "Kitchen Project 4", category: "Kitchen", image: "/assets/kitchen-4.jpg", description: "Add description..." },
-  { title: "Kitchen Project 5", category: "Kitchen", image: "/assets/kitchen-5.jpg", description: "Add description..." },
-  { title: "Kitchen Project 6", category: "Kitchen", image: "/assets/kitchen-6.jpg", description: "Add description..." },
+  { title: "Kitchen  1", category: "Kitchen", image: "/assets/kitchen-1.jpg",  },
+  { title: "Kitchen  2", category: "Kitchen", image: "/assets/kitchen-2.jpg", },
+  { title: "Kitchen  3", category: "Kitchen", image: "/assets/kitchen-3.jpg",  },
+  { title: "Kitchen  4", category: "Kitchen", image: "/assets/kitchen-4.jpg", },
+  { title: "Kitchen  5", category: "Kitchen", image: "/assets/kitchen-5.jpg", },
+  { title: "Kitchen  6", category: "Kitchen", image: "/assets/kitchen-6.jpg", },
+  
+  // Home Transformations (6)
+  { title: "Home Transformation 1", category: "Home Transformations", image: "/assets/living-1.jpg",  },
+  { title: "Home Transformation 2", category: "Home Transformations", image: "/assets/living-2.jpg", },
+  { title: "Home Transformation 3", category: "Home Transformations", image: "/assets/living-3.jpg", },
+  { title: "Home Transformation 4", category: "Home Transformations", image: "/assets/living-4.jpg", },
+  { title: "Home Transformation 5", category: "Home Transformations", image: "/assets/living-5.jpg", },
+  { title: "Home Transformation 6", category: "Home Transformations", image: "/assets/living-6.jpg", },
+  // Basements (6)
+  { title: "Basement 1", category: "Basements", image: "/assets/basement-1.jpg", },
+  { title: "Basement 2", category: "Basements", image: "/assets/basement-2.jpg", },
+  { title: "Basement 3", category: "Basements", image: "/assets/basement-3.jpg", },
+  { title: "Basement 4", category: "Basements", image: "/assets/basement-4.jpg", },
+  { title: "Basement 5", category: "Basements", image: "/assets/basement-5.jpg", },
+  { title: "Basement 6", category: "Basements", image: "/assets/basement-6.jpg", },
 
-  // Living Spaces (6)
-  { title: "Living Space 1", category: "Living Spaces", image: "/assets/living-1.jpg", description: "Add description..." },
-  { title: "Living Space 2", category: "Living Spaces", image: "/assets/living-2.jpg", description: "Add description..." },
-  { title: "Living Space 3", category: "Living Spaces", image: "/assets/living-3.jpg", description: "Add description..." },
-  { title: "Living Space 4", category: "Living Spaces", image: "/assets/living-4.jpg", description: "Add description..." },
-  { title: "Living Space 5", category: "Living Spaces", image: "/assets/living-5.jpg", description: "Add description..." },
-  { title: "Living Space 6", category: "Living Spaces", image: "/assets/living-6.jpg", description: "Add description..." },
-
-  // Laundry (6)
-  { title: "Laundry 1", category: "Laundry", image: "/assets/laundry-1.jpg", description: "Add description..." },
-  { title: "Laundry 2", category: "Laundry", image: "/assets/laundry-2.jpg", description: "Add description..." },
-  { title: "Laundry 3", category: "Laundry", image: "/assets/laundry-3.jpg", description: "Add description..." },
-  { title: "Laundry 4", category: "Laundry", image: "/assets/laundry-4.jpg", description: "Add description..." },
-  { title: "Laundry 5", category: "Laundry", image: "/assets/laundry-5.jpg", description: "Add description..." },
-  { title: "Laundry 6", category: "Laundry", image: "/assets/laundry-6.jpg", description: "Add description..." },
-
-  // Bedrooms (6)
-  { title: "Bedroom 1", category: "Bedrooms", image: "/assets/bedroom-1.jpg", description: "Add description..." },
-  { title: "Bedroom 2", category: "Bedrooms", image: "/assets/bedroom-2.jpg", description: "Add description..." },
-  { title: "Bedroom 3", category: "Bedrooms", image: "/assets/bedroom-3.jpg", description: "Add description..." },
-  { title: "Bedroom 4", category: "Bedrooms", image: "/assets/bedroom-4.jpg", description: "Add description..." },
-  { title: "Bedroom 5", category: "Bedrooms", image: "/assets/bedroom-5.jpg", description: "Add description..." },
-  { title: "Bedroom 6", category: "Bedrooms", image: "/assets/bedroom-6.jpg", description: "Add description..." },
-
-  // Stairs (6)
-  { title: "Stairs 1", category: "Stairs", image: "/assets/stairs-1.jpg", description: "Add description..." },
-  { title: "Stairs 2", category: "Stairs", image: "/assets/stairs-2.jpg", description: "Add description..." },
-  { title: "Stairs 3", category: "Stairs", image: "/assets/stairs-3.jpg", description: "Add description..." },
-  { title: "Stairs 4", category: "Stairs", image: "/assets/stairs-4.jpg", description: "Add description..." },
-  { title: "Stairs 5", category: "Stairs", image: "/assets/stairs-5.jpg", description: "Add description..." },
-  { title: "Stairs 6", category: "Stairs", image: "/assets/stairs-6.jpg", description: "Add description..." },
-
-  // Dining (6)
-  { title: "Dining 1", category: "Dining", image: "/assets/dining-1.jpg", description: "Add description..." },
-  { title: "Dining 2", category: "Dining", image: "/assets/dining-2.jpg", description: "Add description..." },
-  { title: "Dining 3", category: "Dining", image: "/assets/dining-3.jpg", description: "Add description..." },
-  { title: "Dining 4", category: "Dining", image: "/assets/dining-4.jpg", description: "Add description..." },
-  { title: "Dining 5", category: "Dining", image: "/assets/dining-5.jpg", description: "Add description..." },
-  { title: "Dining 6", category: "Dining", image: "/assets/dining-6.jpg", description: "Add description..." },
+  
 ];
 
 function isValidCategory(value: string | null): value is Category {
   return !!value && (categories as readonly string[]).includes(value);
 }
 
-export default function PortfolioPage() {
+function PortfolioContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -122,7 +96,7 @@ export default function PortfolioPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/outdoor.jpg"
+          src="/assets/living-1.jpg"
           alt="Portfolio banner"
           fill
           className="object-cover"
@@ -189,5 +163,13 @@ export default function PortfolioPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function PortfolioPage() {
+  return (
+    <Suspense fallback={<div className="flex min-h-screen items-center justify-center">Loading...</div>}>
+      <PortfolioContent />
+    </Suspense>
   );
 }

@@ -8,7 +8,7 @@ export default function HomeTransformationsPage() {
       {/* HERO */}
       <section className="relative h-[260px] w-full">
         <Image
-          src="/hometrans2.jpg" // update to your actual home reno hero image
+          src="assets/living-1.jpg" // update to your actual home reno hero image
           alt="Modern home interior"
           fill
           className="object-cover"
@@ -49,7 +49,7 @@ export default function HomeTransformationsPage() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="relative h-64 w-full">
               <Image
-                src="/hometrans3.jpg"
+                src="assets/living-3.jpg"
                 alt="Home renovation project 1"
                 fill
                 className="object-cover"
@@ -58,7 +58,7 @@ export default function HomeTransformationsPage() {
 
             <div className="relative h-64 w-full">
               <Image
-                src="/hometrans4.jpg"
+                src="assets/living-5.jpg"
                 alt="Home renovation project 2"
                 fill
                 className="object-cover"
@@ -67,18 +67,27 @@ export default function HomeTransformationsPage() {
 
             <div className="relative h-64 w-full">
               <Image
-                src="/hometrans.jpg"
+                src="assets/living-2.jpg"
                 alt="Home renovation project 3"
                 fill
                 className="object-cover"
               />
             </div>
 
-            <Link href="/portfolio" className="sm:col-span-3">
-              <button className="mt-6 rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
-                View Our Portfolio
-              </button>
-            </Link>
+           <div className="mt-6 flex flex-wrap gap-3">
+  <Link href="/portfolio?category=Home%20Transformations">
+    <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+      View Our Portfolio
+    </button>
+  </Link>
+
+  <Link href="/contact-us">
+    <button className="rounded bg-[#0574C9] px-6 py-2 text-sm font-semibold text-white hover:bg-[#0462A6]">
+      Contact Us
+    </button>
+  </Link>
+</div>
+
           </div>
         </section>
       </div>

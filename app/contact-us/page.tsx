@@ -42,7 +42,7 @@ export default function ContactPage() {
                 Renovations, built around your vision
               </h1>
               <p className="mt-2 text-sm text-slate-600">
-                Tell us about your project, and the Build With Dream team will reach out to help bring your ideas to life.
+                Tell us about your project, and the Build With Dream Group will reach out to help bring your ideas to life.
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   <option value="kitchens">Kitchen Transformation</option>
                   <option value="windows"> Office Renovations</option>
                   <option value="home">Home Improvement Services</option>
-                  <option value="outdoor">Outdoor Improvements</option>
+                  <option value="outdoor">Basement Renovations</option>
 
                 </select>
               </div>
@@ -138,58 +138,67 @@ export default function ContactPage() {
             </form>
           </div>
 
-          <div className="space-y-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div>
-              <h2 className="text-2xl font-bold text-slate-900">Serving Durham &amp; the GTA</h2>
-              <p className="mt-2 text-sm text-slate-600">
-                Whether you&apos;re renovating a bathroom or planning a full home refresh, we bring craftsmanship and care to every project.
-              </p>
-            </div>
+         <div className="space-y-8 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm md:p-10">
+  <div>
+    <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">
+      Contact & Service Area
+    </h2>
+    <p className="mt-3 text-base text-slate-600 md:text-lg">
+      Serving Durham Region and the Greater Toronto Area.
+    </p>
+  </div>
 
-            <div className="space-y-3 text-sm text-slate-700">
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-slate-900">Phone:</span>
-                <a href="tel:4167388654" className="text-[#0574C9] hover:underline">
-                  416-738-8654
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-slate-900">Email:</span>
-                <a
-                  href="mailto:info.buildwithdream.com"
-                  className="text-[#0574C9] hover:underline"
-                >
-                info@buildwithdream.com
-                </a>
-              </div>
-            </div>
+  <div className="space-y-3 text-base text-slate-700 md:text-lg">
+    <div className="flex flex-col items-center gap-1">
+      <span className="font-semibold text-slate-900">Phone</span>
+      <a
+        href="tel:4167388654"
+        className="font-medium text-[#0574C9] hover:underline"
+      >
+        416-738-8654
+      </a>
+    </div>
 
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-900">
-                Services
-              </h3>
-              <ul className="mt-3 space-y-2 text-sm text-slate-700">
-                <li>Washroom Transformations</li>
-                <li>Kitchen Transformations</li>
-                <li>Office Renovations</li>
-                <li>Home Improvement Services</li>
-                <li>Outdoor Improvements</li>
-              </ul>
-            </div>
+    <div className="flex flex-col items-center gap-1">
+      <span className="font-semibold text-slate-900">Email</span>
+      <a
+        href="mailto:info@buildwithdream.com"
+        className="font-medium text-[#0574C9] hover:underline"
+      >
+        info@buildwithdream.com
+      </a>
+    </div>
+  </div>
 
-            <div className="rounded-lg bg-slate-50 p-4 text-sm text-slate-700">
-              <p className="font-semibold text-slate-900">Ready for an estimate?</p>
-              <p className="mt-1">
-                Fill out the form or call us directly. We&apos;ll get back to you as soon as possible.
-              </p>
-              <Link
-                href="tel:4167388654"
-                className="mt-3 inline-block rounded-md bg-[#0574C9] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white hover:bg-[#045e9f]"
-              >
-                Call Now
-              </Link>
-            </div>
-          </div>
+  <div>
+    <h3 className="text-base font-semibold uppercase tracking-wide text-slate-900 md:text-lg">
+      Services
+    </h3>
+    <ul className="mt-3 space-y-2 text-base text-slate-700 md:text-lg">
+      <li>Washroom Renovations</li>
+      <li>Kitchen Renovations</li>
+      <li>Office Renovations</li>
+      <li>Home Renovations</li>
+    </ul>
+  </div>
+
+  <div className="rounded-xl bg-slate-50 p-6 text-base text-slate-700 md:text-lg">
+    <p className="font-semibold text-slate-900">
+      Request a Quote
+    </p>
+    <p className="mt-2">
+      Call us or submit the form and we’ll follow up shortly.
+    </p>
+
+    <Link
+      href="tel:4167388654"
+      className="mt-5 inline-block rounded-md bg-[#0574C9] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-[#045e9f] md:text-base"
+    >
+      Call Now
+    </Link>
+  </div>
+</div>
+
         </div>
       </section>
     </main>

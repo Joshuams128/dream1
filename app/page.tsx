@@ -21,7 +21,7 @@ export default function Home() {
     <div className="mx-auto max-w-6xl px-4 py-10 text-white">
       <div className="max-w-xl bg-black/55 p-6 backdrop-blur md:p-10">
         <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
-          Dream Build Services
+          Dream Build Group
         </h1>
         <p className="mt-4 text-base leading-relaxed md:text-lg">
           Our mission is to create the dream home for our client’s vision
@@ -144,7 +144,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-[#f5f7f8] p-5 text-center">
         <div className="relative h-20 w-full">
           <Image
-            src="/niro-law-scale.webp"
+            src="/niro-law-scale.png"
             alt="Niro Law"
             fill
             className="object-contain"
@@ -160,7 +160,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-[#f5f7f8] p-5 text-center">
         <div className="relative h-20 w-full">
           <Image
-            src="/Vishnu-Mandir-Logo.webp"
+            src="/Vishnu-Mandir-Logo.png"
             alt="Vishnu Mandir"
             fill
             className="object-contain"
@@ -252,18 +252,18 @@ export default function Home() {
             <div className="bg-white shadow p-5">
               <div className="relative h-48 w-full">
                 <Image
-                  src="/basement2.jpeg"
-                  alt="Basement Renovations"
+                  src="/niro-law.png"
+                  alt=" Office Renovations"
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold text-gray-900">
-                Basement Renovations
+                 Office Renovations
               </h3>
               <p className="mt-2 text-gray-700">
-                Finished basement spaces built for comfort and usability.
+                Modern, functional office spaces designed to support productivity and reflect your brand.
               </p>
             </div>
           </div>

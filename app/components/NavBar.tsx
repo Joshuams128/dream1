@@ -37,6 +37,11 @@ export function NavBar() {
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
           <Link href="/" className="hover:underline underline-offset-4">
             Home
+          </Link>
+
+          {/* SERVICES LINK + DROPDOWN */}
+          <div className="relative group">
+            <Link
               href="/services"
               className="flex items-center gap-1 hover:underline underline-offset-4"
             >
@@ -96,33 +101,54 @@ export function NavBar() {
         </button>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* Mobile Dropdown Menu */}
       {open && (
         <nav className="md:hidden bg-[#0462A6] px-6 py-4 space-y-4 text-white text-sm font-medium flex flex-col">
-          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-
-          {/* MOBILE SERVICES */}
-          <div className="flex items-center justify-between">
-            <Link href="/services" onClick={() => setOpen(false)}>
-              Services
-            </Link>
-            <button onClick={() => setServicesOpen(!servicesOpen)}>
-              <span className="text-lg">{servicesOpen ? "▲" : "▼"}</span>
+          <Link href="/" onClick={() => setOpen(false)} className="block">
+            Home
+          </Link>
+          <div className="space-y-2">
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="flex w-full items-center justify-between"
+            >
+              <span>Services</span>
+              <span aria-hidden="true">{servicesOpen ? "▴" : "▾"}</span>
             </button>
+            {servicesOpen && (
+              <div className="space-y-2 pl-4">
+                <Link
+                  href="/services"
+                  onClick={() => {
+                    setOpen(false);
+                    setServicesOpen(false);
+                  }}
+                  className="block"
+                >
+                  All Services
+                </Link>
+                {serviceLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => {
+                      setOpen(false);
+                      setServicesOpen(false);
+                    }}
+                    className="block"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
-
-          {servicesOpen && (
-            <div className="ml-4 flex flex-col space-y-2 text-sm">
-              <Link href="/bathrooms" onClick={() => setOpen(false)}>Washroom Renovations</Link>
-              <Link href="/kitchen-renovation" onClick={() => setOpen(false)}>Kitchen Renovations</Link>
-              <Link href="/basement-renovations" onClick={() => setOpen(false)}>Basement Renovations</Link>
-              <Link href="/home-improvements" onClick={() => setOpen(false)}>Full-Home Renovations</Link>
-              <Link href="/office-renovations" onClick={() => setOpen(false)}>Office Renovations</Link>
-            </div>
-          )}
-
-          <Link href="/portfolio" onClick={() => setOpen(false)}>Portfolio</Link>
-          <Link href="/contact-us" onClick={() => setOpen(false)}>Contact Us</Link>
+          <Link href="/portfolio" onClick={() => setOpen(false)} className="block">
+            Portfolio
+          </Link>
+          <Link href="/contact-us" onClick={() => setOpen(false)} className="block">
+            Contact Us
+          </Link>
         </nav>
       )}
     </header>
