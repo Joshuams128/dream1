@@ -67,6 +67,7 @@ export default function BathroomsPage() {
               fill
               className="object-cover rounded-lg shadow-lg"
               sizes="(min-width: 1024px) 50vw, 100vw"
+              loading="lazy"
             />
           </div>
         </section>

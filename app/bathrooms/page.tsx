@@ -54,6 +54,7 @@ export default function BathroomsPage() {
                 alt="Bathroom project 1"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative h-64 w-full">
@@ -62,6 +63,7 @@ export default function BathroomsPage() {
                 alt="Bathroom project 2"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
                 <div className="relative h-64 w-full">
@@ -70,6 +72,7 @@ export default function BathroomsPage() {
                 alt="Bathroom project 2"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
 

@@ -17,6 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload critical images for faster loading */}
+        <link rel="preload" as="image" href="/hero.jpg" />
+        <link rel="preload" as="image" href="/assets/living-1.jpg" />
+      </head>
       <body className="font-sans">
         <NavBar />
         {children}

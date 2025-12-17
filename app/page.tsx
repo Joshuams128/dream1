@@ -95,6 +95,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 50vw, 100vw"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -129,6 +130,7 @@ export default function Home() {
                   fill
                   className="object-contain"
                   sizes="200px"
+                  loading="lazy"
                 />
               </div>
               <p className="mt-3 text-sm font-semibold text-gray-900">EastFM</p>
@@ -143,6 +145,7 @@ export default function Home() {
                   fill
                   className="object-contain"
                   sizes="200px"
+                  loading="lazy"
                 />
               </div>
               <p className="mt-3 text-sm font-semibold text-gray-900">
@@ -159,6 +162,7 @@ export default function Home() {
                   fill
                   className="object-contain"
                   sizes="200px"
+                  loading="lazy"
                 />
               </div>
               <p className="mt-3 text-sm font-semibold text-gray-900">
@@ -175,6 +179,7 @@ export default function Home() {
                   fill
                   className="object-contain"
                   sizes="200px"
+                  loading="lazy"
                 />
               </div>
               <p className="mt-3 text-sm font-semibold text-gray-900">
@@ -212,6 +217,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold text-gray-900">
@@ -231,6 +237,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold text-gray-900">
@@ -250,6 +257,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
                 />
               </div>
               <h3 className="mt-4 text-xl font-semibold text-gray-900">

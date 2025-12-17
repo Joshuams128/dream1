@@ -73,6 +73,7 @@ export default function ServicesPage() {
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -111,6 +112,7 @@ together to make your kitchen feel beautifully tailored to you.
         fill
         className="object-cover"
         sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
+        loading="lazy"
       />
     </div>
   </div>
@@ -150,6 +152,7 @@ together to make your kitchen feel beautifully tailored to you.
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 24rem, (min-width: 768px) 50vw, 80vw"
+                loading="lazy"
               />
             </div>
           </div>
