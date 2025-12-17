@@ -1,6 +1,7 @@
 // app/page.tsx
 import Image from "next/image";
 import Link from "next/link";
+import VideoModal from "./components/VideoModal";
 
 export default function Home() {
   return (
@@ -86,20 +87,19 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* RIGHT SIDE — VIDEO */}
-            <div className="md:w-1/2">
-              <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
-                <video
-                  src="/basement-video.mov"
-                  className="w-full h-auto rounded-lg"
-                  controls
-                  playsInline
-                  muted
-                >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+            {/* RIGHT SIDE — VIDEO (hidden on mobile) */}
+            <div className="md:w-1/2 hidden md:block">
+              <VideoModal src="/assets/basement-video.mov" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION — MOBILE ONLY */}
+      <section className="bg-[#f5f7f8] py-8 block md:hidden">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center">
+            <VideoModal src="/assets/basement-video.mov" />
           </div>
         </div>
       </section>
