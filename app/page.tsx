@@ -39,10 +39,10 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="tel:4167388654"
+                  href="/services"
                   className="inline-block border border-white/60 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20 md:text-base"
                 >
-                  Call Now
+                  View Services
                 </Link>
               </div>
             </div>
