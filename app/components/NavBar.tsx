@@ -22,9 +22,9 @@ export function NavBar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-12 w-12 md:h-14 md:w-14">
+          <div className="relative h-16 w-16 md:h-20 md:w-20">
             <Image
-              src="/dreamlogo.png"
+              src="/assets/logo-blue-1.png"
               alt="Build With Dream logo"
               fill
               className="object-contain"
