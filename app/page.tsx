@@ -21,16 +21,16 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto max-w-6xl px-4 py-10 text-white">
             <div className="max-w-xl bg-black/55 p-6 backdrop-blur md:p-10">
-              <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+              <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl animate-slide-in-left">
                 Dream Build Group
               </h1>
-              <p className="mt-4 text-base leading-relaxed md:text-lg">
-                Our mission is to create the dream home for our client’s vision
+              <p className="mt-4 text-base leading-relaxed md:text-lg animate-slide-in-left animation-delay-200 opacity-0">
+                Our mission is to create the dream home for our client's vision
                 and make it a reality.
               </p>
 
               {/* CTA BUTTONS */}
-              <div className="mt-6 flex flex-wrap gap-4">
+              <div className="mt-6 flex flex-wrap gap-4 animate-slide-in-up animation-delay-400 opacity-0">
                 <Link
                   href="/contact-us"
                   className="inline-block bg-[#0574C9] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0462A6] md:text-base"
@@ -46,6 +46,15 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION — MOBILE ONLY */}
+      <section className="bg-[#f5f7f8] py-8 block md:hidden">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center">
+            <VideoModal src="/assets/basement-video.mov" />
           </div>
         </div>
       </section>
@@ -91,15 +100,6 @@ export default function Home() {
             <div className="md:w-1/2 hidden md:block">
               <VideoModal src="/assets/basement-video.mov" />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO SECTION — MOBILE ONLY */}
-      <section className="bg-[#f5f7f8] py-8 block md:hidden">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center">
-            <VideoModal src="/assets/basement-video.mov" />
           </div>
         </div>
       </section>
