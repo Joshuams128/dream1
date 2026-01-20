@@ -9,9 +9,6 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   title: "Build With Dream",
   description: "Renovations, repairs, and home improvements in Durham Region.",
-  icons: {
-    icon: "/dreamlogo.png",
-  },
 };
 
 export default function RootLayout({
