@@ -33,9 +33,9 @@ export default function ContactPage() {
   return (
     <main className="bg-white">
       <section className="mx-auto max-w-7xl px-4 py-12">
-        <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
+        <div className="grid gap-8 lg:grid-cols-[2fr,1fr] lg:items-start">
           {/* FORM SECTION - LEFT SIDE */}
-          <div className="flex flex-col space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm lg:p-8">
+          <div className="space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm lg:p-8">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-[#0574C9]">
                 Send Us A Message
@@ -48,7 +48,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <form className="grid gap-4 md:grid-cols-2 flex-1" onSubmit={handleSubmit} noValidate>
+            <form className="grid gap-4 md:grid-cols-2" onSubmit={handleSubmit} noValidate>
               <div className="md:col-span-1">
                 <label className="block text-sm font-medium text-slate-700" htmlFor="name">
                   Name*
@@ -142,126 +142,66 @@ export default function ContactPage() {
             </form>
           </div>
 
-          {/* WHO TRUSTS US SECTION - RIGHT SIDE */}
-          <div className="space-y-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:p-8">
-            {/* CONTACT US */}
-            <div className="text-center border-b border-slate-200 pb-6">
-              <h2 className="text-2xl font-bold text-slate-900">
-                Contact Us
-              </h2>
-              <div className="mt-4 space-y-3">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Phone</p>
-                  <a
-                    href="tel:4167388654"
-                    className="text-lg font-medium text-[#0574C9] hover:underline"
-                  >
-                    416-738-8654
-                  </a>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Email</p>
-                  <a
-                    href="mailto:info@buildwithdream.com"
-                    className="text-sm font-medium text-[#0574C9] hover:underline break-all"
-                  >
-                    info@buildwithdream.com
-                  </a>
-                </div>
-              </div>
-            </div>
+         <div className="space-y-8 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm md:p-10">
+  <div>
+    <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">
+      Contact & Service Area
+    </h2>
+    <p className="mt-3 text-base text-slate-600 md:text-lg">
+      Serving Durham Region and the Greater Toronto Area.
+    </p>
+  </div>
 
-            <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Who Trusts Us
-              </p>
-              <h2 className="mt-2 text-2xl font-bold text-slate-900">
-                Who We've Worked With
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                We're proud to support homeowners and organizations across the GTA with reliable renovations and consistent craftsmanship.
-              </p>
-            </div>
+  <div className="space-y-3 text-base text-slate-700 md:text-lg">
+    <div className="flex flex-col items-center gap-1">
+      <span className="font-semibold text-slate-900">Phone</span>
+      <a
+        href="tel:4167388654"
+        className="font-medium text-[#0574C9] hover:underline"
+      >
+        416-738-8654
+      </a>
+    </div>
 
-            {/* LOGO GRID */}
-            <div className="grid grid-cols-2 gap-4">
-              {/* Brand 1 */}
-              <div className="flex flex-col items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-4 text-center">
-                <div className="relative h-16 w-full">
-                  <Image
-                    src="/eastfm_logo.png"
-                    alt="EastFM"
-                    fill
-                    className="object-contain"
-                    sizes="150px"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="mt-2 text-xs font-semibold text-slate-900">EastFM</p>
-              </div>
+    <div className="flex flex-col items-center gap-1">
+      <span className="font-semibold text-slate-900">Email</span>
+      <a
+        href="mailto:info@buildwithdream.com"
+        className="font-medium text-[#0574C9] hover:underline"
+      >
+        info@buildwithdream.com
+      </a>
+    </div>
+  </div>
 
-              {/* Brand 2 */}
-              <div className="flex flex-col items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-4 text-center">
-                <div className="relative h-16 w-full">
-                  <Image
-                    src="/niro-law-scale.png"
-                    alt="Niro Law"
-                    fill
-                    className="object-contain"
-                    sizes="150px"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="mt-2 text-xs font-semibold text-slate-900">
-                  Niro Law
-                </p>
-              </div>
+  <div>
+    <h3 className="text-base font-semibold uppercase tracking-wide text-slate-900 md:text-lg">
+      Services
+    </h3>
+    <ul className="mt-3 space-y-2 text-base text-slate-700 md:text-lg">
+      <li>Washroom Renovations</li>
+      <li>Kitchen Renovations</li>
+      <li>Office Renovations</li>
+      <li>Home Renovations</li>
+    </ul>
+  </div>
 
-              {/* Brand 3 */}
-              <div className="flex flex-col items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-4 text-center">
-                <div className="relative h-16 w-full">
-                  <Image
-                    src="/Vishnu-Mandir-Logo.png"
-                    alt="Vishnu Mandir"
-                    fill
-                    className="object-contain"
-                    sizes="150px"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="mt-2 text-xs font-semibold text-slate-900">
-                  Vishnu Mandir
-                </p>
-              </div>
+  <div className="rounded-xl bg-slate-50 p-6 text-base text-slate-700 md:text-lg">
+    <p className="font-semibold text-slate-900">
+      Request a Quote
+    </p>
+    <p className="mt-2">
+      Call us or submit the form and we’ll follow up shortly.
+    </p>
 
-              {/* Brand 4 */}
-              <div className="flex flex-col items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-4 text-center">
-                <div className="relative h-16 w-full">
-                  <Image
-                    src="/insurance-logo-small.png"
-                    alt="Desjardins Insurance"
-                    fill
-                    className="object-contain"
-                    sizes="150px"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="mt-2 text-xs font-semibold text-slate-900">
-                  Desjardins Insurance
-                </p>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-6 flex justify-center border-t border-slate-200 pt-6">
-              <Link
-                href="tel:4167388654"
-                className="inline-block rounded-lg bg-[#0574C9] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#045e9f]"
-              >
-                Call Now
-              </Link>
-            </div>
-          </div>
+    <Link
+      href="tel:4167388654"
+      className="mt-5 inline-block rounded-md bg-[#0574C9] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-[#045e9f] md:text-base"
+    >
+      Call Now
+    </Link>
+  </div>
+</div>
 
         </div>
       </section>

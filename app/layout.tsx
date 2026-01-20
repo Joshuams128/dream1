@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Build With Dream",
   description: "Renovations, repairs, and home improvements in Durham Region.",
   icons: {
-    icon: "/assets/logo-blue-1.png",
+    icon: "/dreamlogo.png",
   },
 };
 
